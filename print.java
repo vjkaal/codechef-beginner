@@ -8,6 +8,6 @@ public class print{
     }
 
     public static void print(Object o,String s){
-        System.out.println(o+s);
+        System.out.print(o+s);
     }
 }
