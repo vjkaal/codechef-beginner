@@ -22,6 +22,10 @@ class cielrcpt extends print{
                 res=i-1;
                 break;
             }
+            if(a>1024){
+                res=11;
+                break;
+            }
         }
         print(res);
         return res;
@@ -29,7 +33,8 @@ class cielrcpt extends print{
 
     private static int minMenus(int p,int q){
         int res=0,val=0;
-        for(int i=q;i>0;i--){
+        for(int i=q;i>=0;i--){
+
             double pow=Math.pow(2,i);
             while(val!=p){
                 if((val+pow)<=p){
