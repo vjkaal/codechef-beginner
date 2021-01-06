@@ -7,12 +7,23 @@ class sumtrian extends print{
             int[][] arr=new int[n][n+1];
             printArray(arr);
             print("yes");
-            for(int i=1;i<=n+1;i++){
+            for(int i=0;i<n+1;i++){
                 for(int j=0;j<i;j++){
-                    arr[i][j]=in.nextInt();
+                    arr[i-1][j]=in.nextInt();
                 }
             }
             printArray(arr);
-            print(arr[1][1]);
+            //print(arr[1][1]);
+            //int size=int(n(n-1)/2)+1;
+            int[] A=new int[n];
+            int sum=0;
+            int x=0;
+            for(int i=0;i<n+1;i++){
+                for(int j=0;j<i;j++){
+                    print(arr[i-1][j]," ");
+
+                }
+                print();
+            }
     }
 }
